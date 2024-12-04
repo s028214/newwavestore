@@ -15,6 +15,7 @@
 		DF6584362CF65E0600E53F9F /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6584352CF65E0600E53F9F /* Products.swift */; };
 		DF6584382CFE271400E53F9F /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6584372CFE271400E53F9F /* ProductView.swift */; };
 		DF65843C2CFF86D500E53F9F /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65843B2CFF86D500E53F9F /* ProductListView.swift */; };
+		DF65843E2D00EDE700E53F9F /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65843D2D00EDE700E53F9F /* CartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DF6584352CF65E0600E53F9F /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		DF6584372CFE271400E53F9F /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		DF65843B2CFF86D500E53F9F /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		DF65843D2D00EDE700E53F9F /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				DF6584372CFE271400E53F9F /* ProductView.swift */,
 				DF65843B2CFF86D500E53F9F /* ProductListView.swift */,
+				DF65843D2D00EDE700E53F9F /* CartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF65843C2CFF86D500E53F9F /* ProductListView.swift in Sources */,
+				DF65843E2D00EDE700E53F9F /* CartView.swift in Sources */,
 				DF6584382CFE271400E53F9F /* ProductView.swift in Sources */,
 				DF6584202CF6588300E53F9F /* ContentView.swift in Sources */,
 				DF6584362CF65E0600E53F9F /* Products.swift in Sources */,
