@@ -9,10 +9,9 @@ import SwiftUI
 
 @main
 struct New_Wave_StoreApp: App {
-    @State var product: Products = Products() // testing
     var body: some Scene {
         WindowGroup {
-            ProductListView() // switch back to ContentView - Current setup for testing
+            ContentView() 
         }
     }
 }

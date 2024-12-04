@@ -10,6 +10,7 @@ import SwiftUI
 struct ProductView: View {
     
     @Binding var product: Products
+    @Binding var cart: [Products]
     
     var body: some View {
         ZStack{
@@ -70,7 +71,20 @@ struct ProductView: View {
                 
                 // Add to Cart
                 Button(action: {
-                    // TODO
+//                    debug - console
+//                    for c in cart {
+//                        print(c)
+//                    }
+                    
+                    // if it is in the cart
+                    if let index = cart.firstIndex(where: { $0.name == product.name}) {
+                        // print("Item is already in cart")
+                        // if it's in the cart, only update the quantity
+                        cart[index].quantity += product.quantity
+                    } else { // if it's not in the cart
+                        //   print("Item is added")
+                        cart.append(product)
+                    }
                 }, label: {
                     Text("Add To Cart")
                         .padding(.vertical)
@@ -79,7 +93,6 @@ struct ProductView: View {
                         .foregroundColor(Color.white)
                         .background(Color.blue)
                         .cornerRadius(10)
-            
                 })
             }
         }
@@ -87,5 +100,5 @@ struct ProductView: View {
 }
 
 #Preview {
-    ProductView(product: Binding.constant(Products()))
+    ProductView(product: Binding.constant(Products()), cart: Binding.constant([]))
 }
